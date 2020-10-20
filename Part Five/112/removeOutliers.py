@@ -9,6 +9,8 @@
 
 def reduceList(t,nElementToRemove):
     #order the list
+    newList = t[:]
+
     newList.sort()
 
     #remove n element at the beginning
