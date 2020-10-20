@@ -17,9 +17,3 @@ def onlyWords(s):
         returnList.append(word)
 
     return returnList
-
-line = input("Inserisci una stringa: ")
-s = onlyWords(line)
-for word in s:
-    print(word)
-
