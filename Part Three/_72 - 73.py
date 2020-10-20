@@ -1,19 +1,19 @@
 #VERIFICA SE UNA STRINGA E' PALINDROMA
 
-PUNCTUATIONS = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+PUNCTUATIONS = '''!()-[]{};:'",<>.?@#$%^&*_~'''
 
 text = input("Inserisci la parola: ")
 
 
-def removePuncutationsMarks(text):
+def removePunctuationMarks(text):
     string ="" 
     for char in text:
-        thereIsPuncutations = False
+        thereIsPunctuation = False
         for mark in PUNCTUATIONS:
             if(mark==char):
-                thereIsPuncutations = True
+                thereIsPunctuation = True
 
-        if(thereIsPuncutations==False):
+        if(thereIsPunctuation==False):
             string += char   
 
     return string
@@ -29,7 +29,7 @@ while (text!=""):
     #rendo il testo minuscolo
     text = text.lower()
     #elimino i segni di punteggiatura
-    text = removePuncutationsMarks(text)
+    text = removePunctuationMarks(text)
 
     while i<=(len(text)-1):
         if(text[i] != text[len(text)-1-i]):
@@ -43,4 +43,4 @@ while (text!=""):
         print("La stringa NON E' PALINDROMA")
         
     print("")
-    text = input("Inserisci la parola: ");
+    text = input("Inserisci la parola: ")
