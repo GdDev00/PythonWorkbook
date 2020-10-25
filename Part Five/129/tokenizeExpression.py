@@ -1,8 +1,10 @@
-OPERATORS = ["*","/","^","-","+"]
+#Ex. 129 Tokenizing a String
 
-
+#converting a string into a list of substrings, known as tokens
+#@params stringExpression -> string to convert
+#@return -> converted token list
 def tokenize(stringExpression):
-    text = stringExpression.replace(" ","")
+    text = stringExpression
     tokens=[]
     i=0
     while i < len(text):
@@ -18,6 +20,8 @@ def tokenize(stringExpression):
                 num = num+text[i]
                 i+=1
             tokens.append(num)
+        elif text[i] == " ":
+            i+=1
         else:
             #la stringa inserita contiene caratteri non validi!
             tokens.clear()
