@@ -22,10 +22,6 @@ def create_bingo_card():
     return card_dict
 
 def show_bingo_card(card):
-
-    #create the card
-
-    #show the card
     print(" B  I  N  G  O ")
     for i in range(5):
         for char in "BINGO":

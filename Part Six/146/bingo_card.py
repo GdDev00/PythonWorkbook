@@ -21,12 +21,7 @@ def create_bingo_card():
 
     return card_dict
 
-def show_bingo_card():
-
-    #create the card
-    card = create_bingo_card()
-
-    #show the card
+def show_bingo_card(card):
     print(" B  I  N  G  O ")
     for i in range(5):
         for char in "BINGO":
@@ -36,8 +31,8 @@ def show_bingo_card():
 
 def main():
     line = input("Premi qualsiasi tasto per generare la tua cartella del bingo: ")
-
-    show_bingo_card()
+    card = create_bingo_card()
+    show_bingo_card(card)
 
 if __name__ == "__main__":
     main()
