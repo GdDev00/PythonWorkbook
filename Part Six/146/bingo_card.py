@@ -9,13 +9,13 @@ def create_bingo_card():
         #i will generate 5 number for letter
         for i in range(5):
             if char in card_dict:
-                newNumber =  random.randint(numerb_range_min,numerb_range_min+15)
+                newNumber =  random.randint(numerb_range_min,numerb_range_min+14)
                 while newNumber in card_dict[char]:
-                    newNumber =  random.randint(numerb_range_min,numerb_range_min+15)
+                    newNumber =  random.randint(numerb_range_min,numerb_range_min+14)
 
                 card_dict[char].append(newNumber)
             else:
-                card_dict[char] = [random.randint(numerb_range_min,numerb_range_min+15)]
+                card_dict[char] = [random.randint(numerb_range_min,numerb_range_min+14)]
 
         numerb_range_min += 15
 
