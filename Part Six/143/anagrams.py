@@ -12,8 +12,8 @@ def char_count(word):
     return chars_dict
 
     
-word1 = input("Inserisci una parola: ")
-word2 = input("Insersci la parola da confrontare: ")
+word1 = input("Inserisci una parola: ").lower()
+word2 = input("Insersci la parola da confrontare: ").lower()
 
 counts1 = char_count(word1)
 counts2 = char_count(word2)
