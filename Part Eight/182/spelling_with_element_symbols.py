@@ -1,8 +1,6 @@
 #Ex. 172 Spelling with element symbol
 import os
 
-
-
 def spelling(word_to_spell, symbol_list):
     if len(word_to_spell) == 0:
         return ""
@@ -27,8 +25,7 @@ def spelling(word_to_spell, symbol_list):
 
 
 def main():
-    d = {}
-    print(os.getcwd())
+    element_dict = {}
 
     file_path = os.path.join(os.path.dirname(__file__),"elements.txt")
 
@@ -37,10 +34,10 @@ def main():
             line = line.lower()
             line = line.replace("\n","")
             key, symbol, element = line.split(",")
-            d[symbol] = element
+            element_dict[symbol] = element
 
-    for element in d.values():
-        result = spelling(element,d)
+    for element in element_dict.values():
+        result = spelling(element,element_dict)
         if result != "":
             print(result)
 
