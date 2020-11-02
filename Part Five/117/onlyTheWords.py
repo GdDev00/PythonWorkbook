@@ -1,6 +1,5 @@
 #Ex. 117 Only the Words
 import string
-punctuations = ",.?-_!:;"
 
 #Remove punctuations marks at the beginning and the end of a word
 #@params: s = the string to remove punctuations marks
