@@ -34,6 +34,8 @@ def main():
 
             frequency_dict[word] = frequency_dict.get(word, 0) + 1
 
+    inf.close()
+    
     #print result
     print("The most frequency words is:")
     max_frequency = max(frequency_dict.values())

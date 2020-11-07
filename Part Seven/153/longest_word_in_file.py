@@ -35,6 +35,7 @@ for line in lines:
 
 all_isto_values = isto.values()
 longest_word = max(all_isto_values)
+text.close()
 print("The longest word is formed by %d char" %longest_word)
 
 print("These are the longest words:->")

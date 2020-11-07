@@ -21,6 +21,7 @@ def main():
 
     last_line_word = ""
 
+    #for each line in the file
     for i in range(len(file_lines)):
         file_lines[i] = file_lines[i].rstrip()
         file_lines[i] = file_lines[i].lower()
@@ -37,6 +38,8 @@ def main():
             previous_word = word
         last_line_word = line_words[-1]
 
+    inf.close()
+    
     for element in repeated_words:
         print(element)
         

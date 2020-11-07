@@ -22,6 +22,7 @@ for line in inf:
         word = word.lower()
         frequency_dict[word] = frequency_dict.get(word, 0) + 1
 
+inf.close()
 print("These are the letter frequencies for this file->")
 for key,value in frequency_dict.items():
     print("%s:-> %d" %(key,value))
